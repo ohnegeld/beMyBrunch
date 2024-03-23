@@ -1,12 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /MyApp
+  - source: /beMybrunch
     destination: /var/www/html
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 180
-  AfterInstall:
-    - location: scripts/start_server.sh
-      timeout: 180
